@@ -1,4 +1,6 @@
 streamlit
 torch
 pandas
-scikit-learn
+transformers
+PyPDF2
+python-docx
