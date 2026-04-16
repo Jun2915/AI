@@ -1,6 +1,7 @@
 streamlit
 torch
-pandas
 transformers
+pandas
 PyPDF2
 python-docx
+nltk
