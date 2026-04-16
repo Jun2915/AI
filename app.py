@@ -19,14 +19,14 @@ st.set_page_config(page_title="Wohoo Text Summarizer", page_icon="📝", layout=
 # ==========================================
 @st.cache_resource
 def load_t5():
-    tokenizer = AutoTokenizer.from_pretrained("./my_custom_t5")
-    model = AutoModelForSeq2SeqLM.from_pretrained("./my_custom_t5")
+    tokenizer = AutoTokenizer.from_pretrained("RAINN4439/my_custom_t5")
+    model = AutoModelForSeq2SeqLM.from_pretrained("RAINN4439/my_custom_t5")
     return tokenizer, model
 
 @st.cache_resource
 def load_bart():
-    tokenizer = BartTokenizer.from_pretrained("./my_custom_bart")
-    model = BartForConditionalGeneration.from_pretrained("./my_custom_bart")
+    tokenizer = BartTokenizer.from_pretrained("RAINN4439/my_custom_bart")
+    model = BartForConditionalGeneration.from_pretrained("RAINN4439/my_custom_bart")
     return tokenizer, model
 
 @st.cache_resource
